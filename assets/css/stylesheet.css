@@ -1,0 +1,606 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    background-color: #fcfce3 !important;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+/* ----------------------------------------------------------------*/
+/* This section sets the navbar of the page */
+/* ----------------------------------------------------------------*/
+
+.navbar-custom {
+    background-color: #256e4a;
+}
+
+.navbar {
+    font-size: 16px;
+}
+
+.navbar-nav .nav-item {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.navbar-nav .nav-link {
+    padding: 0 15px;
+    position: relative;
+    color: #fcfce3;
+}
+
+.navbar-nav .nav-link:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0%;
+    background: #fcfce3;
+    transition: all 0.4s ease;
+}
+
+.navbar-nav .nav-link:hover:before {
+    width: 100%;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar i:hover,
+.navbar-nav .nav-link:active,
+.navbar i:hover {
+    color: #fcfce3 !important;
+    cursor: pointer !important;
+}
+
+.navbar i {
+    padding-left: 25px;
+}
+
+.navbar a {
+    color: #000;
+}
+
+@media only screen and (max-width: 990px) {
+
+    .navbar-nav .nav-link {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .navbar .fa-solid {
+        margin: 20px 10px 15px 0px;
+    }
+} 
+
+/* ----------------------------------------------------------------*/
+/* This section sets the header image of the page */
+/* ----------------------------------------------------------------*/
+
+.header-image {
+    margin-top: 6.5rem;
+    height: 100%; 
+    width: 100%;
+    outline: #1C5C7B solid 4px;
+}
+
+/* ----------------------------------------------------------------*/
+/* This section sets the about us of the page */
+/* ----------------------------------------------------------------*/
+
+.about-parent {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: space-between;
+    border-bottom: #1C5C7B solid 3px;
+}
+
+.about-parent p{
+    font-style: italic;
+    font-weight: 400;
+}
+
+.about-child {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 40px 30px 40px 60px;
+}
+
+.ms-child {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 40px 60px 40px 30px;
+    background-color: #256E4A;
+    color: #FCFCE3;
+}
+
+.about-head {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+/* ----------------------------------------------------------------*/
+/* This section sets the extras of the page */
+/* ----------------------------------------------------------------*/
+
+.extra-parent {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: space-around;
+    font-style: italic;
+    font-weight: 500;
+    padding: 30px;
+}
+
+.extra-parent h3 {
+    text-align: center;
+    padding-top: 25px;
+}
+
+.extra-parent p {
+    text-align: center;
+    padding-top: 25px;
+}
+
+.extra-parent a {
+    text-decoration: none;
+    color: #000;
+}
+
+.products-child, .howto-child, .loyalty-child, .contact-child {
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+}
+
+/* ----------------------------------------------------------------*/
+/* This section sets the footer styling*/
+/* ----------------------------------------------------------------*/
+
+footer {
+    background-color: #C1997D;
+}
+
+footer h3 {
+    color: #1C5C7B;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+footer li {
+    padding-bottom: 4px;
+    list-style: none;
+}
+
+footer li a {
+    font-size: 0.8rem;
+    color: #1C5C7B;
+    text-decoration: none;
+}
+
+footer li a:hover {
+    color: #FCFCE3;
+}
+
+footer .copyright a {
+    color: #1C5C7B;
+    height: 30px;
+    width: 30px;
+    background-color: #FCFCE3;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    transition: 0.4s ease;
+    margin: 0 5px;
+}
+
+footer .copyright a:hover {
+    color: #FCFCE3;
+    background-color: #1C5C7B;
+}
+
+footer p {
+    color: #1C5C7B;
+}
+
+.footer-image {
+    height: auto;
+    width: 180px;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ----------------------------------------------------------------*/
+/* This section sets the landing page styling*/
+/* ----------------------------------------------------------------*/
+
+.landing-row-1 {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: space-around;
+    padding-top: 25px;
+}
+
+.landing-intro {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding: 40px 30px 40px 60px;
+}
+
+.landing-intro h1 {
+    padding: 20px;
+    text-align: center;
+}
+
+.intro-image {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 30px 60px 40px 30px;  
+}
+
+.landing-row-2 {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: space-around;
+    padding: 20px 0 25px;
+}
+
+.landing-row-2 a {
+    text-decoration: none;
+    color: #000;
+}
+
+.for-you-container,.household-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.for-you, .household {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 20px;   
+}
+ 
+.for-you-container h2, .household-container h2 {
+    padding: 20px;
+}
+
+/* ----------------------------------------------------------------*/
+/* This section sets the landing page styling*/
+/* ----------------------------------------------------------------*/
+
+.col .for-you-image {
+    height: 100%;
+    width: 400px;
+    margin-left: 60px;
+    display: flex;
+    flex-shrink: inherit;
+    height: 100%;
+    width: 90%;
+    flex-basis: 100%;
+    border-left: #000 solid 3px;
+    border-right: #000 solid 3px;
+}
+
+.for-you-banner {
+    margin-top: 8rem;
+    background-color: #C1997D;
+    border: #000 solid 3px;
+}
+
+.for-you-head {
+    margin: 20px 0 10px 30px;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.for-you-banner .col p {
+    margin: 20px;
+}
+
+/* ----------------------------------------------------------------*/
+/* This section sets the for you page styling*/
+/* ----------------------------------------------------------------*/
+
+button {
+    font-size: 0.8rem;
+    font-weight: 900;
+    outline: none;
+    border: none;
+    background-color: #256E4A;
+    color: #FCFCE3;
+    padding: 13px 30px;
+    text-transform: uppercase;
+    cursor: pointer
+}
+
+button:hover {
+    background-color: #FCFCE3;
+    color: #256E4A;
+}
+
+.product {
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+.product img {
+    transition: 0.3s all;
+}
+
+.product:hover img {
+    opacity: 0.7;
+}
+
+.product h3 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.product h4 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* ----------------------------------------------------------------*/
+/* This section sets the single product page styling*/
+/* ----------------------------------------------------------------*/
+
+.single-product input {
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.single-product input:focus {
+    outline: none;
+}
+
+.single-product .buy-btn {
+    background-color: #256E4A;
+    opacity: 1;
+    transition: 0.4s all;
+}
+
+.single-product .buy-btn:hover {
+    background-color: #1C5C7B;
+    color: #FCFCE3;
+}
+
+/* ----------------------------------------------------------------*/
+/* This section sets the cart styling*/
+/* ----------------------------------------------------------------*/
+
+.cart table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart .product-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cart th {
+    text-align: left;
+    padding: 5px 10px;
+    color: #000;
+    background-color: #C1997D;
+}
+
+.cart td {
+    padding: 20px 20px;
+}
+
+.cart td img {
+    width: 180px;
+    height: 100%;
+    margin-right: 10px;
+}
+
+.cart td input {
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+
+.cart td a {
+    color: #256E4A;
+}
+
+.cart .remove-btn {
+    color: #256E4A;
+    text-decoration: none;
+    font-size: 15px;
+    background-color: #FCFCE3;
+    border: none;
+    width: 100%;
+}
+
+.cart .edit-btn {
+    color: #256E4A;
+    text-decoration: none;
+    font-size: 15px;
+    background-color: #FCFCE3;
+    border: none;
+}
+
+.cart-total {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cart-total table {
+    width: 100%;
+    max-width: 500px;
+    border-top: 3px solid #000;
+}
+
+td:last-child {
+    text-align: right;
+}
+
+th:last-child {
+    text-align: right;
+}
+
+.checkout-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.checkout-container .checkout-btn {
+    background-color: #256E4A;
+    color: #FCFCE3;
+    border: #000 solid 2px;
+}
+
+/* ----------------------------------------------------------------*/
+/* This section sets the Checkout page */
+/* ----------------------------------------------------------------*/
+
+#checkout-form .checkout-small-element {
+    display: inline-block;
+    width: 48%;
+    margin: 10px auto;
+}
+
+#checkout-form .checkout-large-element {
+    width: 96%;
+}
+
+#checkout-form .checkout-btn-container {
+    margin: 10px;
+    text-align: right;
+    margin-right: 40px;
+}
+
+#checkout-form #checkout-btn {
+    background-color: #256E4A;
+    color: #FCFCE3;
+}
+
+/* ----------------------------------------------------------------*/
+/* This section sets the info styling*/
+/* ----------------------------------------------------------------*/
+
+.info-text-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-basis: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-text {
+    margin: 25px;
+    padding: 25px;
+    background-color: #256E4A;
+    color: #FCFCE3;
+    font-size: 24px;
+}
+
+.info-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.info-text-image {
+    height: auto;
+    width: 50%;
+}
+
+.steps {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.step-detail {
+    font-size: 28px !important;
+    font-weight: 300 !important;
+}
+
+/* ----------------------------------------------------------------*/
+/* This section sets the contact form styling*/
+/* ----------------------------------------------------------------*/
+
+#contact-form .contact-small-element {
+    display: inline-block;
+    width: 48%;
+    margin: 10px auto;
+}
+
+#contact-form .contact-large-element {
+    width: 96%;
+}
+
+#contact-form .contact-btn-container {
+    margin: 10px;
+    text-align: right;
+    margin-right: 40px;
+}
+
+#contact-form #contact-btn {
+    background-color: #256E4A;
+    color: #FCFCE3;
+}
+
+/* ----------------------------------------------------------------*/
+/* This section sets the loyalty page styling*/
+/* ----------------------------------------------------------------*/
+
+.hero {
+    background-image: url(../images/Index/Loyalty_header.png);
+    background-size: cover;
+    background-position: 50%;
+    padding: 40px 0 40px 0;
+    color: #000;
+}
+
+.loyalty-container {
+    background-color: #256E4A;
+    color: #FCFCE3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    border-top: #1C5C7B solid 3px;
+}

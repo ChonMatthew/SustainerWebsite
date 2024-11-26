@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
+
+* {
+  font-family: "Karla", sans-serif;
+  background-color: #fcfce3;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  width: 0px; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+
+/* Hide scrollbar for IE, Edge, and Firefox */
+body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.header {
+  background-color: #8dbb67; /* Green background for the header */
+  padding: 20px;
+  text-align: center;
+}
+
+.nav_menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px; /* Padding for spacing */
+}
+
+.nav_menu .home {
+  color: white; /* White text for links */
+  text-decoration: none; /* No underline for links */
+  padding: 10px 15px; /* Padding for spacing */
+  background-color: #256e4a;
+}
+
+.nav_menu .logout {
+  color: white; /* White text for links */
+  text-decoration: none; /* No underline for links */
+  padding: 10px 15px; /* Padding for spacing */
+  background-color: crimson; /* Red background for LOGOUT */
+}
+
+.content-container {
+  display: flex; /* Establishes a flex container */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Aligns items vertically in the center */
+  max-width: 100%;
+}
+
+.content {
+  display: flex; /* Establishes a flex container */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Aligns items vertically in the center */
+  flex-direction: column; /* Stacks children vertically */
+}
+
+.centered-group {
+  display: flex;
+  flex-direction: column; /* Stacks children vertically */
+  justify-content: center; /* Centers children vertically */
+  align-items: center; /* Aligns items horizontally in the center */
+  width: 150%; /* Sets the width to fill the container */
+}
+
+/* Common styles for all containers */
+.profile-container,
+.points-container {
+  border: 1px solid black;
+  padding: 5px;
+  margin: 5px;
+  display: flex; /* Establishes a flex container */
+  align-items: center; /* Aligns items vertically in the center */
+  justify-content: start; /* Centers content horizontally */
+  flex-direction: row; /* Stacks children vertically */
+  text-align: center; /* Centers text for single line items */
+  width: 15%; /* Sets the width to half of the parent container */
+}
+
+/* Adjust the size of the images to fit within the containers */
+.profile-pic {
+  display: flex;
+  width: 100px; /* Adjust size as needed */
+  height: 100px; /* Adjust size as needed */
+  border-radius: 10%;
+}
+
+/* Reset margins for p elements to ensure consistent spacing */
+.user-info p,
+.points-info p,
+.vouchers-label,
+.tier-label {
+  margin: 0;
+}
+
+/* Additional styles for specific containers */
+.points-info {
+  margin-left: 10px;
+}
+
+.history-link {
+  display: block;
+  color: #0000ff; /* Blue color for link */
+  text-decoration: none;
+}
+
+.tier-container {
+  text-align: right;
+}
+
+/* Ensure the user-info, points, and description sections have consistent spacing */
+.user-info,
+.points {
+  margin-bottom: 20px; /* Spacing between sections */
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners for sections */
+}
+
+.user-info,
+.points,
+.description {
+  margin-bottom: 20px; /* Spacing between sections */
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners for sections */
+}
+
+.tier-list {
+  list-style-type: none; /* Remove default list styling */
+  display: flex; /* Use flexbox to layout children */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  padding: 0; /* Remove default padding */
+}
+
+.tier-list li {
+  font-size: 25px;
+  background-color: #256e4a;
+  padding: 10px 140px; /* Adjust as needed */
+  margin: 0 40px; /* Space between each list item */
+}
+
+.tier-list li.active {
+  background-color: #4caf50; /* Change the background color for the active state */
+  color: white; /* Optional: change text color for the active state */
+}
+
+.description {
+  display: none; /* Hide all sections by default */
+}
+
+/* Add this to highlight the active list item */
+.tier-list li.active {
+  background-color: #4caf50; /* Change the background color for the active state */
+  color: white; /* Optional: change text color for the active state */
+}
+
+li:hover {
+  background-color: #8dbb67;
+  color: whitesmoke;
+}
+
+hr {
+  border: 1px solid black; /* Green line to match the header */
+  margin: 20px 0; /* Spacing around the horizontal line */
+  flex-shrink: 0;
+}
+
+.rest-container {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100vw; /* Ensures the container spans the full viewport width */
+  padding: 70px 0 20px 0px;
+}
+
+.offer-container {
+  max-width: 100%;
+  margin: 10px auto;
+  padding: 20px;
+  font-size: 25px;
+}
+
+.offer-container h2 {
+  text-align: center;
+  margin: 0; /* Remove margin-left */
+}
+
+.benefit {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.benefit img {
+  margin-top: 20px;
+  width: 70px; /* Adjust size as needed */
+  margin-right: 20px;
+}
+
+.benefit-info h3 {
+  margin-top: 20px;
+  color: #333;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.benefit-info p {
+  margin: 5px 0 0;
+  font-size: 20px;
+}
+
+/* Add this CSS to style the button */
+.edit-button {
+  bottom: 600px; /* 20px from the bottom */
+  right: 50px; /* 20px from the right */
+  padding: 10px 30px; /* Padding inside the button */
+  background-color: grey; /* Green background color */
+  color: white; /* White text color */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 20px;
+}
+
+/* Optional: Add styles for hover effect */
+.edit-button:hover {
+  background-color: #45a049; /* Slightly darker green on hover */
+}

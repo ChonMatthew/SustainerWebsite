@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
+
+* {
+  font-family: "Karla", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  padding-bottom: 60px;
+}
+
+.container .content {
+  text-align: center;
+}
+
+.container .content h3 {
+  font-size: 30px;
+  color: #333;
+}
+
+.container .content h3 span {
+  background: #256e4a;
+  color: #fff;
+  border-radius: 5px;
+  padding: 0 15px;
+}
+
+.container .content h1 {
+  font-size: 50px;
+  color: #333;
+}
+
+.container .content h1 span {
+  color: crimson;
+}
+
+.container .content p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.container .content .btn {
+  display: inline-block;
+  padding: 10px 30px;
+  font-size: 20px;
+  background: #333;
+  color: #fff;
+  margin: 0 5px;
+  cursor: pointer;
+  text-transform: capitalize;
+  transition: 0.2ms ease-in-out;
+}
+
+.container .content .btn:hover {
+  background: #256e4a;
+}
+
+.form-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  padding-bottom: 60px;
+  background: #fcfce3;
+  position: relative;
+  width: 100%;
+  border-radius: 6px;
+  padding: 25px;
+}
+
+.form-container form {
+  padding: 30px;
+  position: relative;
+  min-height: 490px;
+  margin-top: 30px;
+  width: 50%;
+}
+
+.form-container form header {
+  /* font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #333; */
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 600;
+  /* color: whitesmoke; */
+  border: #256e4a;
+  color: whitesmoke;
+  border-radius: 5px;
+  background-color: #256e4a;
+  padding: 10px;
+  width: 80%;
+  margin: 0 auto 47px auto;
+}
+
+.form-container form input {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 17px;
+  margin: 20px 0;
+  background: #eee;
+}
+
+.form-container form input,
+.form-container form select {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 17px;
+  margin: 10px 0;
+  background: #eee;
+  border-radius: 5px;
+}
+
+.form-container form select option {
+  background: #fff;
+}
+
+.form-container form .form-btn {
+  background: #256e4a;
+  color: black;
+  text-transform: capitalize;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 30px;
+  padding: 20px;
+}
+
+.form-container form .form-btn:hover {
+  background: #0f412b;
+  color: #fff;
+}
+
+.form-container form p {
+  margin-top: 10px;
+  font-size: 20px;
+  color: black;
+}
+
+.form-container form p a {
+  color: #113824;
+}
+
+.form-container form .subheading {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.form-container form .error-msg {
+  margin: 10px 0;
+  display: block;
+  background: crimson;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.form-container .login-form {
+  width: calc(100% - 15px);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-container .fa{
+  margin-bottom: 50px;
+  font-size: 28px;
+  color: #000;
+}
+
+
